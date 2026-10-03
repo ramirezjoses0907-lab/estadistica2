@@ -84,7 +84,7 @@ packages <- c("tidyverse","kableExtra","psych","readxl")
 ipak(packages)
 ```
 
-[**Introducción**]{style="color:red"}
+# **Introducción**
 
 Una **distribución de frecuencias** constituye una de las herramientas fundamentales del análisis estadístico descriptivo. Su propósito es organizar y resumir un conjunto de datos mediante el conteo de las veces que aparece cada valor o categoría de una variable.
 
@@ -92,25 +92,8 @@ Cuando se analiza una sola variable, se construye una **distribución de frecuen
 
 Estas herramientas permiten transformar grandes cantidades de información en estructuras organizadas que facilitan la interpretación, comparación y representación gráfica de los datos.
 
-En el contexto de la **Administración Pública**, por ejemplo, pueden utilizarse para estudiar:
 
-- Nivel educativo de los ciudadanos.
-
-- Tipo de servicio público utilizado.
-
-- Satisfacción con una entidad estatal.
-
-- Edad de los usuarios.
-
-- Ingresos de los hogares.
-
-- Relación entre nivel educativo y satisfacción.
-
-- Relación entre género y uso de servicios públicos.
-
-- Relación entre estrato socioeconómico y acceso a programas sociales.
-
-[**Distribucion de frecuencias unidimensional**]{style="color:red"}
+# **Distribucion de frecuencias unidimensional**}
 
 ***Concepto***
 
@@ -129,7 +112,7 @@ La distribución de frecuencias permite determinar cuántas observaciones corres
 Una tabla de frecuencias puede contener las siguientes columnas:
 
 | Símbolo | Nombre | Interpretación |
-|----|----|----|
+|------------------------|------------------------|------------------------|
 | x_i | Valor o categoría | Valor observado de la variable |
 | f_i | Frecuencia absoluta | Número de veces que aparece x_i |
 | F_i | Frecuencia absoluta acumulada | Número de observaciones hasta x_i |
@@ -305,7 +288,7 @@ Y expresarse en porcentaje:
 round(prop.table(table(satisfaccion)) * 100, 2) 
 ```
 
-**Representacion grafica de una distribucion unidimensional**
+# **Representacion grafica de una distribucion unidimensional**
 
 La elección del gráfico depende del tipo de variable.
 
@@ -424,7 +407,7 @@ Para representar una variable cuantitativa continua:
 ggplot(   data.frame(ingresos),   aes(x = ingresos) ) +   geom_histogram(     bins = 6   ) +   labs(     title = "Distribución de los ingresos mensuales",     x = "Ingresos (millones de pesos)",     y = "Frecuencia"   ) +   theme_minimal() 
 ```
 
-[**Distribucion de frecuencia bidimensional**]{style="color:red"}
+# **Distribucion de frecuencia bidimensional**
 
 ***Concepto***
 
@@ -624,7 +607,7 @@ ggplot(   datos_grafico,   aes(     x = Modalidad,     y = Frecuencia,     fill 
 
 Este gráfico resulta especialmente útil cuando los tamaños de los grupos son diferentes.
 
-**Distribución bidimensional y asociación**
+# **Distribución bidimensional y asociación**
 
 Una de las principales aplicaciones de las tablas bidimensionales consiste en estudiar si existe una posible **relación o asociación entre dos variables**.
 
@@ -677,7 +660,7 @@ $$\alpha = 0.05$$
 [**Diferencia entre distribucion unidimensional y bidimensional**]{style="color:red"}
 
 | Característica | Unidimensional | Bidimensional |
-|----|----|----|
+|------------------------|------------------------|------------------------|
 | Número de variables | 1 | 2 |
 | Objetivo | Describir una variable | Analizar dos variables conjuntamente |
 | Tabla principal | Tabla de frecuencias | Tabla de contingencia |
